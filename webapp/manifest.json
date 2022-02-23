@@ -1,0 +1,108 @@
+{
+  "_version": "1.8.0",
+  "sap.app": {
+      "id": "buscacep",
+      "type": "application",
+      "i18n": "i18n/i18n.properties",
+      "applicationVersion": {
+          "version": "1.0.0"
+      },
+      "title": "{{apptitle}}",
+      "description": "{{appDescription}}",
+      "dataSources": {
+          "formacoes_alias": {
+              "uri": "model/formacoes.json",
+              "type": "JSON"
+          }
+      }
+  },
+  "sap.ui": {
+      "technology": "BuscaCEP",
+      "icons": {
+          "icon": "",
+          "favIcon": "",
+          "phone": "",
+          "phone@2": "",
+          "tablet": ",",
+          "tablet@2": ""
+      },
+      "deviceTypes": {
+          "desktop": true,
+          "tablet": true,
+          "phone": true
+      },
+      "supportedThemes": [
+          "sap_fiori_3",
+          "sap_belize"
+      ]
+  },
+  "sap.ui5": {
+      "rootView": {
+          "viewName": "buscacep.view.App",
+          "type": "XML"
+      },
+      "dependencies": {
+          "minUI5Version": "1.60.0",
+          "libs": {
+              "sap.ui.layout": {},
+              "sap.ui.core": {},
+              "sap.m": {}
+          }
+      },        
+      "contentDensities": {
+          "compact": true,
+          "cozy": true
+      },
+      "models": {
+          "i18n": {
+              "type": "sap.ui.model.resource.ResourceModel",
+              "settings": {
+                  "bundleName": "buscacep.i18n.i18n"
+              }
+          },
+          "tiles": {
+              "type": "sap.ui.model.json.JSONModel",
+              "dataSource": "tiles"
+          }
+      },
+      "resources": {
+          "css": [
+              {
+                  "uri": "css/styles.css"
+              }
+          ]
+      },
+      "routing": {
+          "config": {
+              "routerClass": "sap.m.routing.Router",
+              "viewType": "XML",
+              "async": true,
+              "viewPath": "buscacep.view",
+              "controlAggregation": "pages",
+              "controlId": "app",
+              "clearControlAggregation": false
+          },
+          "routes": [
+              {
+                  "name": "RouteApp",
+                  "pattern": "",
+                  "target": [
+                      "TargetApp"
+                  ]
+              }
+          ],
+          "targets": {
+              "TargetApp": {
+                  "viewType": "XML",
+                  "transition": "slide",
+                  "clearControlAggregation": false,
+                  "viewName": "App"
+              }
+          }
+      }
+  },
+  "sap.platform.hcp": {
+      "uri": "webapp",
+      "_version": "1.1.0"
+  }
+}

@@ -1,2 +1,2 @@
 # buscacep
-App buscacep desenvolvida com frameword SAPUI5.
+APP de BuscaCEP em todo o Brasil.

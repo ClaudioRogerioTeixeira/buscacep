@@ -1,0 +1,31 @@
+{
+  "name": "BuscaCEP",
+  "version": "1.0.0",
+  "description": "BuscaCEP sapui5",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ClaudioRogerioTeixeira/buscacep"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
