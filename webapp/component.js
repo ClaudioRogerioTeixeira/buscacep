@@ -5,7 +5,7 @@ sap.ui.define([
 ) {
 	"use strict";
 
-	return UIComponent.extend("buscacep.component", {
+	return UIComponent.extend("buscacep.ui5.component", {
 		
 		metadata: {
       manifest: "json"

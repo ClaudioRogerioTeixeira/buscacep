@@ -1,2 +1,2 @@
-# buscacep
-APP de BuscaCEP em todo o Brasil.
+# BuscaCEP UI5
+APP de Busca CNPJ em todo o Brasil.

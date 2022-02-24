@@ -1,18 +1,18 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/m/MessageToast",
 	"sap/ui/model/json/JSONModel",
-], function(
-	Controller, MessageToast, JSONModel
-) {
+	"sap/m/MessageToast"
+], function(Controller, JSONModel, MessageToast) {
 	"use strict";
 
-	return Controller.extend("buscacep.controller.App", {
+	return Controller.extend("buscacep.ui5.controller.App", {
+
+
 
 		/**
 		 * @override
 		 */
-		onInit: function() {
+		 onInit: function() {
 			this.getView().byId("idIconTabBarNoIcons").setVisible(false);
 		},
 
@@ -65,7 +65,8 @@ sap.ui.define([
 			})			
 
 
-		}
+		}		
+
 
 	});
 });
