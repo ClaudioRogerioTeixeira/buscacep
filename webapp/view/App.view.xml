@@ -2,13 +2,85 @@
 	controllerName="buscacep.controller.App"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:html="http://www.w3.org/1999/xhtml"
 	displayBlock="true"
 	height="100%"
 	busyIndicatorDelay="0"
 >
 
 <App id="app">
-  <Page showHeader="true" title="BuscaCEP" backgroundDesign="Transparent">
+  <Page showHeader="false" title="BuscaCEP" backgroundDesign="Transparent">
+
+		<html:picture>
+			<html:source media="(max-width: 480px)" srcset="./assets/top600.png" />
+			<html:source media="(max-width: 768px)" srcset="./assets/top600.png" />
+			<html:img src="./assets/header.png" width="100%" height="auto" />              
+		</html:picture>
+
+		<html:div class="container">
+			<FlexBox direction="Column" alignItems="Center" >
+				<html:picture>
+					<html:source media="(max-width: 480px)" srcset="./assets/thumbnail_notebook.png" />
+					<html:source media="(max-width: 768px)" srcset="./assets/thumbnail_notebook.png" />
+					<html:img src="./assets/notebook.png" width="100%" height="auto" />              
+				</html:picture>
+				<Text class="text" text="Consulte o CEP"/>
+			</FlexBox>			
+
+			<FlexBox direction="Row" justifyContent="Center"	>
+				<Input class="input" id="inputCep" placeholder="Digite o CEP" showValueHelp="true"  
+				tooltip="Digite o CEP"				/>
+				<Button id="button" icon="sap-icon://search" text="" press=".consultarCep" tooltip="Consultar o CEP" />
+			</FlexBox>                      		
+		</html:div>   
+
+		<!-- Dados -->
+		<IconTabBar
+		id="idIconTabBarNoIcons"
+		class="sapUiResponsiveContentPadding sapUiLargeMarginTop sapUiLargeMarginBottom"     
+		>
+			<items>
+				<IconTabFilter text="Dados Pesquisados" key="dados" iconColor="Critical">
+					
+					<List headerText="Cidade: {data>/localidade}">
+						<InputListItem label="Cep:" type="Navigation">
+							<Text text="{data>/cep}" tooltip="Cep" class="textColor"/>
+						</InputListItem>
+
+						<InputListItem label="Logradouro:" type="Navigation">
+							<Text text="{data>/logradouro}" tooltip="Logradouro" class="textColor"/>
+						</InputListItem>
+						
+						<InputListItem label="Complemento:" type="Navigation">
+							<Text text="{data>/complemento}" tooltip="Complemento" class="textColor"/>
+						</InputListItem>
+
+						<InputListItem label="Bairro:" type="Navigation">
+							<Text text="{data>/bairro}" tooltip="Bairro" class="textColor"/>
+						</InputListItem>
+
+						<InputListItem label="UF:" type="Navigation">
+							<Text text="{data>/uf}" tooltip="UF" class="textColor"/>
+						</InputListItem>
+
+						<InputListItem label="IBGE:" type="Navigation">
+							<Text text="{data>/ibge}" tooltip="IBGE" class="textColor"/>
+						</InputListItem>
+
+						<InputListItem label="DDD:" type="Navigation">
+							<Text text="{data>/ddd}" tooltip="DDD" class="textColor"/>
+						</InputListItem>
+
+					</List>
+
+				</IconTabFilter>
+			</items>
+		</IconTabBar>        
+
+		<footer>
+			<core:Fragment fragmentName="buscacep.view.Footer" type="XML" />          
+		</footer>
 
   </Page>
 </App>

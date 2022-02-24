@@ -1,0 +1,8 @@
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+>
+  <OverflowToolbar  class="sapUiMediumMarginTop toolbarSetting">
+        <Text text="Copyright © 2022 Claudio Teixeira. All Rights Reserved." class="colorTextFooter" />
+  </OverflowToolbar>
+</c:FragmentDefinition>
