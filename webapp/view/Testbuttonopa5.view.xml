@@ -1,0 +1,19 @@
+<mvc:View
+	controllerName="buscacnpj.ui5.controller.Testbuttonopa5"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+>
+  <Shell>
+    <App>
+      <Page id="firstPage">
+        <headerContent>
+          <Button id="pressMeButton" text="Press me" press=".onPress" visible="true" />
+        </headerContent>
+        <content>
+          <Button id="firstButtonOnSecondPage" text="I am the first Button!" visible="true"/>
+          <Button id="secondButtonOnSecondPage" text="I am the second Button!" visible="true"/>
+        </content>
+      </Page>
+    </App>
+  </Shell>  
+</mvc:View>

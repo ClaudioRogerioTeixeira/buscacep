@@ -1,7 +1,7 @@
 {
-  "name": "BuscaCEPUI5",
+  "name": "BuscaCNPJUI5",
   "version": "1.0.0",
-  "description": "BuscaCEP sapui5",
+  "description": "BuscaCNPJ sapui5",
   "engines": {
     "node": "14.x"
   },
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ClaudioRogerioTeixeira/buscacep"
+    "url": "https://github.com/ClaudioRogerioTeixeira/buscacnpjui5"
   },
   "keywords": [
     "node",

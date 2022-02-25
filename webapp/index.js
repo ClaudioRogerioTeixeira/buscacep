@@ -9,7 +9,7 @@ sap.ui.define([
     new sap.m.Shell({
       app: new ComponentContainer({
         height: "100%",
-        name: "buscacep.ui5"
+        name: "buscacnpj.ui5"
       })
     }).placeAt("content")
   });

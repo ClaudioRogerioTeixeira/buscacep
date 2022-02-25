@@ -91,29 +91,6 @@
   border-left: 7px solid #4E4D4D !important;
 }
 
-/* CEP */
-
-.container {  
-  margin-top: 80px;
-}
-
-.text {
-  font-size: 30px;
-}
-
-.input {
-  width: 500px !important;
-}
-
-.toolbarSetting {  
-  background-color:#859807 !important;
-  justify-content: center;
-}
-
-.colorTextFooter {
-  color: white !important;  
-}
-
 /* media queries */
 /*----------------------------------------------------------*/
 @media only screen and (max-width: 600px) {

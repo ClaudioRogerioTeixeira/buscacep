@@ -1,7 +1,7 @@
 {
     "_version": "1.8.0",
     "sap.app": {
-        "id": "buscacep.ui5",
+        "id": "buscacnpj.ui5",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -17,7 +17,7 @@
         }
     },
     "sap.ui": {
-        "technology": "BuscaCEP UI5",
+        "technology": "BuscaCNPJ UI5",
         "icons": {
             "icon": "",
             "favIcon": "",
@@ -38,7 +38,7 @@
     },
     "sap.ui5": {
         "rootView": {
-            "viewName": "buscacep.ui5.view.App",
+            "viewName": "buscacnpj.ui5.view.App",
             "type": "XML"
         },
         "dependencies": {
@@ -57,7 +57,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "buscacep.ui5.i18n.i18n"
+                    "bundleName": "buscacnpj.ui5.i18n.i18n"
                 }
             },
             "tiles": {
@@ -77,7 +77,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "async": true,
-                "viewPath": "buscacep.ui5.view",
+                "viewPath": "buscacnpj.ui5.view",
                 "controlAggregation": "pages",
                 "controlId": "app",
                 "clearControlAggregation": false
