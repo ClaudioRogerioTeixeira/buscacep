@@ -2,20 +2,7 @@
 	xmlns="sap.m"
 	xmlns:c="sap.ui.core"
 >
-
-<!-- 
-<Toolbar class="toolbarColor sapUiTinyMargin">
-  <content>
-      <ToolbarSpacer/>
-      <Label text="Desenvolvido: Claudio Teixeira" tooltip="Claudio Teixeira" class="labelFooter"/>
-  </content>
-</Toolbar> 
--->
-
-<OverflowToolbar class="sapUiMediumMarginTop toolbarColor">
-  <ToolbarSpacer/>
-  <Text text="Copyright © 2022 Claudio Teixeira. All Rights Reserved." class="centerFooter"/>
-  <ToolbarSpacer/>
-</OverflowToolbar>
-
+  <OverflowToolbar  class="sapUiMediumMarginTop toolbarSetting">
+        <Text text="Copyright © 2022 Claudio Teixeira. All Rights Reserved." class="colorTextFooter" />
+  </OverflowToolbar>
 </c:FragmentDefinition>
