@@ -7,7 +7,7 @@
       "applicationVersion": {
           "version": "1.0.0"
       },
-      "title": "{{appTitle}}",
+      "title": "{{apptitle}}",
       "description": "{{appDescription}}",
       "dataSources": {
           "formacoes_alias": {
@@ -59,6 +59,10 @@
               "settings": {
                   "bundleName": "buscacep.i18n.i18n"
               }
+          },
+          "tiles": {
+              "type": "sap.ui.model.json.JSONModel",
+              "dataSource": "tiles"
           }
       },
       "resources": {
